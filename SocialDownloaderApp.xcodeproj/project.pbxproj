@@ -10,11 +10,12 @@
 		67293DBE278E9921002DA50E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DBD278E9921002DA50E /* AppDelegate.swift */; };
 		67293DC0278E9921002DA50E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DBF278E9921002DA50E /* SceneDelegate.swift */; };
 		67293DC2278E9921002DA50E /* CategoryDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DC1278E9921002DA50E /* CategoryDownloadViewController.swift */; };
-		67293DC5278E9921002DA50E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67293DC3278E9921002DA50E /* Main.storyboard */; };
 		67293DC7278E9925002DA50E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67293DC6278E9925002DA50E /* Assets.xcassets */; };
 		67293DCA278E9925002DA50E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67293DC8278E9925002DA50E /* LaunchScreen.storyboard */; };
 		67293DD4278E99D3002DA50E /* CategoryDownloadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DD3278E99D3002DA50E /* CategoryDownloadModel.swift */; };
 		67293DDC278E9AD6002DA50E /* SocialDownloaderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DDB278E9AD6002DA50E /* SocialDownloaderAppTests.swift */; };
+		67293DE6278EAF40002DA50E /* CategoryDownloadCollectionViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DE5278EAF40002DA50E /* CategoryDownloadCollectionViewDatasource.swift */; };
+		67293DE9278EB02A002DA50E /* CategoryDownloadUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DE8278EB02A002DA50E /* CategoryDownloadUICollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +33,14 @@
 		67293DBD278E9921002DA50E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67293DBF278E9921002DA50E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		67293DC1278E9921002DA50E /* CategoryDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDownloadViewController.swift; sourceTree = "<group>"; };
-		67293DC4278E9921002DA50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67293DC6278E9925002DA50E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67293DC9278E9925002DA50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67293DCB278E9925002DA50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67293DD3278E99D3002DA50E /* CategoryDownloadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDownloadModel.swift; sourceTree = "<group>"; };
 		67293DD9278E9AD6002DA50E /* SocialDownloaderAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialDownloaderAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67293DDB278E9AD6002DA50E /* SocialDownloaderAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialDownloaderAppTests.swift; sourceTree = "<group>"; };
+		67293DE5278EAF40002DA50E /* CategoryDownloadCollectionViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDownloadCollectionViewDatasource.swift; sourceTree = "<group>"; };
+		67293DE8278EB02A002DA50E /* CategoryDownloadUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDownloadUICollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +82,12 @@
 		67293DBC278E9921002DA50E /* SocialDownloaderApp */ = {
 			isa = PBXGroup;
 			children = (
+				67293DE7278EAFFC002DA50E /* cells */,
+				67293DE4278EAF03002DA50E /* datasource */,
 				67293DD2278E99BA002DA50E /* model */,
 				67293DD1278E993E002DA50E /* controllers */,
 				67293DBD278E9921002DA50E /* AppDelegate.swift */,
 				67293DBF278E9921002DA50E /* SceneDelegate.swift */,
-				67293DC3278E9921002DA50E /* Main.storyboard */,
 				67293DC6278E9925002DA50E /* Assets.xcassets */,
 				67293DC8278E9925002DA50E /* LaunchScreen.storyboard */,
 				67293DCB278E9925002DA50E /* Info.plist */,
@@ -114,6 +117,22 @@
 				67293DDB278E9AD6002DA50E /* SocialDownloaderAppTests.swift */,
 			);
 			path = SocialDownloaderAppTests;
+			sourceTree = "<group>";
+		};
+		67293DE4278EAF03002DA50E /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				67293DE5278EAF40002DA50E /* CategoryDownloadCollectionViewDatasource.swift */,
+			);
+			path = datasource;
+			sourceTree = "<group>";
+		};
+		67293DE7278EAFFC002DA50E /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				67293DE8278EB02A002DA50E /* CategoryDownloadUICollectionViewCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +218,6 @@
 			files = (
 				67293DCA278E9925002DA50E /* LaunchScreen.storyboard in Resources */,
 				67293DC7278E9925002DA50E /* Assets.xcassets in Resources */,
-				67293DC5278E9921002DA50E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +237,9 @@
 			files = (
 				67293DC2278E9921002DA50E /* CategoryDownloadViewController.swift in Sources */,
 				67293DD4278E99D3002DA50E /* CategoryDownloadModel.swift in Sources */,
+				67293DE6278EAF40002DA50E /* CategoryDownloadCollectionViewDatasource.swift in Sources */,
 				67293DBE278E9921002DA50E /* AppDelegate.swift in Sources */,
+				67293DE9278EB02A002DA50E /* CategoryDownloadUICollectionViewCell.swift in Sources */,
 				67293DC0278E9921002DA50E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,14 +263,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		67293DC3278E9921002DA50E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67293DC4278E9921002DA50E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		67293DC8278E9925002DA50E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -389,7 +401,6 @@
 				INFOPLIST_FILE = SocialDownloaderApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -416,7 +427,6 @@
 				INFOPLIST_FILE = SocialDownloaderApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
