@@ -16,6 +16,12 @@
 		67293DDC278E9AD6002DA50E /* SocialDownloaderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DDB278E9AD6002DA50E /* SocialDownloaderAppTests.swift */; };
 		67293DE6278EAF40002DA50E /* CategoryDownloadCollectionViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DE5278EAF40002DA50E /* CategoryDownloadCollectionViewDatasource.swift */; };
 		67293DE9278EB02A002DA50E /* CategoryDownloadUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DE8278EB02A002DA50E /* CategoryDownloadUICollectionViewCell.swift */; };
+		67293DEB278EEF64002DA50E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DEA278EEF64002DA50E /* NotificationsViewController.swift */; };
+		67293DED278EF0AC002DA50E /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DEC278EF0AC002DA50E /* NotificationModel.swift */; };
+		67293DEF278EF12C002DA50E /* NotificationDescriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DEE278EF12C002DA50E /* NotificationDescriptionModel.swift */; };
+		67293DF1278EF40B002DA50E /* NotificationsCollectionViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DF0278EF40B002DA50E /* NotificationsCollectionViewDatasource.swift */; };
+		67293DF3278EF528002DA50E /* NotificationsDescriptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DF2278EF528002DA50E /* NotificationsDescriptionCollectionViewCell.swift */; };
+		67293DF5278F43E2002DA50E /* NotificationsHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67293DF4278F43E2002DA50E /* NotificationsHeaderCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +47,12 @@
 		67293DDB278E9AD6002DA50E /* SocialDownloaderAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialDownloaderAppTests.swift; sourceTree = "<group>"; };
 		67293DE5278EAF40002DA50E /* CategoryDownloadCollectionViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDownloadCollectionViewDatasource.swift; sourceTree = "<group>"; };
 		67293DE8278EB02A002DA50E /* CategoryDownloadUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDownloadUICollectionViewCell.swift; sourceTree = "<group>"; };
+		67293DEA278EEF64002DA50E /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		67293DEC278EF0AC002DA50E /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		67293DEE278EF12C002DA50E /* NotificationDescriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDescriptionModel.swift; sourceTree = "<group>"; };
+		67293DF0278EF40B002DA50E /* NotificationsCollectionViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCollectionViewDatasource.swift; sourceTree = "<group>"; };
+		67293DF2278EF528002DA50E /* NotificationsDescriptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsDescriptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		67293DF4278F43E2002DA50E /* NotificationsHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				67293DC1278E9921002DA50E /* CategoryDownloadViewController.swift */,
+				67293DEA278EEF64002DA50E /* NotificationsViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -107,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				67293DD3278E99D3002DA50E /* CategoryDownloadModel.swift */,
+				67293DEC278EF0AC002DA50E /* NotificationModel.swift */,
+				67293DEE278EF12C002DA50E /* NotificationDescriptionModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -123,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				67293DE5278EAF40002DA50E /* CategoryDownloadCollectionViewDatasource.swift */,
+				67293DF0278EF40B002DA50E /* NotificationsCollectionViewDatasource.swift */,
 			);
 			path = datasource;
 			sourceTree = "<group>";
@@ -131,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				67293DE8278EB02A002DA50E /* CategoryDownloadUICollectionViewCell.swift */,
+				67293DF2278EF528002DA50E /* NotificationsDescriptionCollectionViewCell.swift */,
+				67293DF4278F43E2002DA50E /* NotificationsHeaderCollectionReusableView.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -237,10 +255,16 @@
 			files = (
 				67293DC2278E9921002DA50E /* CategoryDownloadViewController.swift in Sources */,
 				67293DD4278E99D3002DA50E /* CategoryDownloadModel.swift in Sources */,
+				67293DED278EF0AC002DA50E /* NotificationModel.swift in Sources */,
+				67293DF5278F43E2002DA50E /* NotificationsHeaderCollectionReusableView.swift in Sources */,
+				67293DEF278EF12C002DA50E /* NotificationDescriptionModel.swift in Sources */,
 				67293DE6278EAF40002DA50E /* CategoryDownloadCollectionViewDatasource.swift in Sources */,
 				67293DBE278E9921002DA50E /* AppDelegate.swift in Sources */,
 				67293DE9278EB02A002DA50E /* CategoryDownloadUICollectionViewCell.swift in Sources */,
+				67293DEB278EEF64002DA50E /* NotificationsViewController.swift in Sources */,
+				67293DF1278EF40B002DA50E /* NotificationsCollectionViewDatasource.swift in Sources */,
 				67293DC0278E9921002DA50E /* SceneDelegate.swift in Sources */,
+				67293DF3278EF528002DA50E /* NotificationsDescriptionCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
