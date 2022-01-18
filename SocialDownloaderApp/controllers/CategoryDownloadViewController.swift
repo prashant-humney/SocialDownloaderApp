@@ -72,6 +72,8 @@ class CategoryDownloadViewController: UIViewController {
     
     @objc func navigateToNotifications() {
         print("Navigate to Notifications..!!!")
+        let vc = NotificationsViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     //TODO: Change the height and width of the bar button

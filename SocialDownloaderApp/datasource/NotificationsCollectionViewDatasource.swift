@@ -31,7 +31,8 @@ extension NotificationsCollectionViewDatasource: UICollectionViewDataSource {
         }
         
         collectionViewCell.layer.cornerRadius = 20.0
-        collectionViewCell.layer.borderWidth = 1.0
+        collectionViewCell.layer.borderWidth = 0.25
+        collectionViewCell.layer.borderColor = UIColor.lightGray.cgColor
         collectionViewCell.renderCollectionViewCell(items[indexPath.section].descriptionItems[indexPath.row])
         return collectionViewCell
     }
@@ -43,6 +44,7 @@ extension NotificationsCollectionViewDatasource: UICollectionViewDataSource {
                 return UICollectionReusableView()
             }
             
+            headerView.title.text = "New"
             return headerView
         default:
             assert(false, "Invalid element type")
@@ -53,7 +55,7 @@ extension NotificationsCollectionViewDatasource: UICollectionViewDataSource {
 extension NotificationsCollectionViewDatasource: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.size.width - 32.0
-        let height: CGFloat = 56
+        let height: CGFloat = 65
         
         return CGSize(width: width, height: height)
     }
@@ -63,6 +65,6 @@ extension NotificationsCollectionViewDatasource: UICollectionViewDelegateFlowLay
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width, height: 30.0)
+        return CGSize(width: collectionView.frame.size.width, height: 50.0)
     }
 }

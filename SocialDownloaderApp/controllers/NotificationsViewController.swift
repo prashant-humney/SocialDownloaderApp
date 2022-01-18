@@ -19,8 +19,10 @@ class NotificationsViewController: UIViewController {
     
     var datasource: NotificationsCollectionViewDatasource?
     
+    //TODO: Change the layout of Navigation Item
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Notifications"
         datasource = NotificationsCollectionViewDatasource(fetchDataModel())
         collectionView.dataSource = datasource
         collectionView.delegate = datasource
@@ -37,16 +39,16 @@ class NotificationsViewController: UIViewController {
     }
     
     func fetchDataModel() -> [NotificationModel] {
-        let descriptionModel1 = NotificationDescriptionModel(imageName: "instagram", friendName: "Shweta", notificationDescription: "mentioned you in a post", timeElapsed: "12 sec")
-        let descriptionModel2 = NotificationDescriptionModel(imageName: "facebook", friendName: "Prashant", notificationDescription: "liked your status", timeElapsed: "5 mins")
+        let descriptionModel1 = NotificationDescriptionModel(imageName: "pic1", friendName: "Shweta", notificationDescription: "mentioned you in a post", timeElapsed: "12 sec")
+        let descriptionModel2 = NotificationDescriptionModel(imageName: "pic2", friendName: "Prashant", notificationDescription: "liked your status", timeElapsed: "5 mins")
         let notificationModel1 = NotificationModel(category: .new, descriptionItems: [descriptionModel1, descriptionModel2])
         
-        let descriptionModel3 = NotificationDescriptionModel(imageName: "instagram", friendName: "Shweta", notificationDescription: "mentioned you in a post", timeElapsed: "12 sec")
-        let descriptionModel4 = NotificationDescriptionModel(imageName: "facebook", friendName: "Prashant", notificationDescription: "liked your status", timeElapsed: "5 mins")
+        let descriptionModel3 = NotificationDescriptionModel(imageName: "pic1", friendName: "Shweta", notificationDescription: "mentioned you in a post", timeElapsed: "12 sec")
+        let descriptionModel4 = NotificationDescriptionModel(imageName: "pic3", friendName: "Prashant", notificationDescription: "liked your status", timeElapsed: "5 mins")
         let notificationModel2 = NotificationModel(category: .earlier, descriptionItems: [descriptionModel3, descriptionModel4])
         
-        let descriptionModel5 = NotificationDescriptionModel(imageName: "instagram", friendName: "Shweta", notificationDescription: "tagged you in a video", timeElapsed: "yesterday at 12 AM")
-        let descriptionModel6 = NotificationDescriptionModel(imageName: "facebook", friendName: "Prashant", notificationDescription: "accepted your friend request", timeElapsed: "4 day")
+        let descriptionModel5 = NotificationDescriptionModel(imageName: "pic2", friendName: "Shweta", notificationDescription: "tagged you in a video", timeElapsed: "yesterday at 12 AM")
+        let descriptionModel6 = NotificationDescriptionModel(imageName: "pic3", friendName: "Prashant", notificationDescription: "accepted request", timeElapsed: "4 day")
         let notificationModel3 = NotificationModel(category: .new, descriptionItems: [descriptionModel5, descriptionModel6])
         
         return [notificationModel1, notificationModel2, notificationModel3]
